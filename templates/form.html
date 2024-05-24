@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Información Personal</title>
+</head>
+<body>
+    <h2>Ingrese su Información Personal</h2>
+    <form action="/generate_pdf" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" id="apellido" name="apellido" required><br>
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" required><br>
+        <label for="celular">Número de Celular:</label><br>
+        <input type="tel" id="celular" name="celular" required><br><br>
+        <input type="submit" value="Generar PDF">
+    </form>
+</body>
+</html>
